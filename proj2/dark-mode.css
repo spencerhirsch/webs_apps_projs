@@ -1,0 +1,228 @@
+/* Laying out formatting for body of webpage. */
+body {
+    height: 100%;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, serifs;
+    margin: 0pt;
+    padding: 0pt;
+    background-color: rgb(23, 22, 22);
+    color: lightgray;
+}
+
+/* Container used to hold all elements of the html page. */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Setting overall layout of header */
+header {
+    flex-direction: column;
+    display: flex;
+    background: #000000;
+    color: #b08968;
+    padding: 20px;
+    margin-bottom: -20px;
+}
+
+/* Adding borders to my table on the resume page. */
+table, tr, th, td {
+    border: 1px solid white;
+}
+
+/* This code came from the CSS slides on Canvas. */
+header h1 {
+    /* Adding gradient to header. */
+    background-image: linear-gradient(to right, #fdf0d5, #6f5728);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+}
+
+/* Used to set color for the break after header 2. */
+header hr {
+    border: 0;
+    margin: 0;
+    border-top: 1px solid #b08968;
+}
+
+/* Formatting for unordered list. */
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Formatting for list items. */
+header li {
+    float: left;
+    color: black;
+    text-align: left;
+    padding: 0.5em;
+    font-size: 12pt;
+}
+
+/* Formatting for naviagtion links. */
+header a:link {
+    color: #fdf0d5;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1pt;
+    padding: 2pt;
+}
+
+/* Prevent color from changing when a link has already been visited. */
+header a:visited {
+    color: #fdf0d5;
+}
+
+/* When user is hovering a link, make changes in color and width. */
+header a:hover {
+    background-image: linear-gradient(to right, black, rgb(94, 93, 93));
+    color: white;
+    border-width: 3pt;
+    padding: 7pt;
+}
+/* When user is on a current page, display contents in a different color. */
+header a.active {
+    color: #669bbc;
+    border-width:2pt;
+}
+
+/* When user is hovering over a link, have the background color change and show a gradient. */
+header a.active:hover {
+    background-image: linear-gradient(to right, black, rgb(94, 93, 93));
+    color: #669bbc;
+    border-width: 3pt;
+    padding: 7pt;
+}
+
+.main-body {
+    margin: 20pt;
+    /* Allowing for footer to be fixed at bottom. */
+    flex-grow: 1;
+}
+
+/* Basic footer formatting. */
+footer {
+    background: #000000;
+    color: #ffffff;
+    font-size: 8pt;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    /* Fixing spacing issues. */
+    margin-left: -40px;
+    margin-top: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    /* Fixing spacing issues. */
+    margin-left: -40px;
+    margin-top: -20px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0.5em;
+}
+
+footer a, 
+footer a:link {
+    color: #fdf0d5;
+    padding: 2pt;
+}
+
+/* Setting formatting for copyright at extreme bottom of page. */
+.copyright {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -5px
+}
+
+/* Setting the formatting for smaller screens. */
+@media screen and (max-width: 768px) {
+    header ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        /* Fixing formatting issues. */
+        margin-left: -5px;
+    }
+
+    header li {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    header a {
+        display: block;
+        width: 100%;
+    }
+
+    .main-footer {
+        display: flex;
+        align-items: left;
+        text-align: center;
+        justify-content: left;
+    }
+
+    /* Adding feature to list formatting. */
+    .main-footer li::before {
+        content: ">";
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: left;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Class used to add break between html pages and social media links. */
+    .social-border {
+        border-top: 1px solid lightgray;
+        /* Automatically adjust the size of the break depending on size of page. */
+        width: calc(100vw - 30px);
+        margin: 0 auto 15px;
+    }
+
+    .social-media ul {
+        /* Fixing formatting */
+        margin-left: 15px;
+    }
+
+    footer li {
+        text-align: left;
+    }
+    
+    footer a {
+        display: inline-block;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
