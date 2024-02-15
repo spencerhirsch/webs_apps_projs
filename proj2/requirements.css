@@ -152,6 +152,20 @@ footer a:link {
     margin-top: -5px
 }
 
+.projects-body {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
+    background: green;
+}
+
+.projects-body article {
+    background: #ECEFF1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
 /* Setting the formatting for smaller screens. */
 @media screen and (max-width: 768px) {
     header ul {
