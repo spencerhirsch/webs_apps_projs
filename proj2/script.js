@@ -9,6 +9,8 @@ fetch(filePath)
         let html = ``;
         items.forEach(item => {
             // console.log(item)
+            // console.log(item.querySelector("link").innerHTML)
+            console.log(data.getElementByTagName("enclosure")[0].getAttribute("url"));
             html += `
                 <article>
                     <img src="${item.querySelector("link").innerHTML}">

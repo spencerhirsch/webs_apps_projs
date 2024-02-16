@@ -153,17 +153,39 @@ footer a:link {
 }
 
 .projects-body {
-    margin: 1rem;
+    margin: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 2rem;
-    background: green;
+    background: ECEFF1;
 }
 
 .projects-body article {
     background: #ECEFF1;
     border-radius: 4px;
     overflow: hidden;
+}
+
+.filter {
+    display: flex;
+}
+
+.filter input{
+    border: 0px solid white;
+}
+
+.filter div {
+    margin: 0 10px 0 0;
+    border-radius: 5px;
+    background: rgb(237, 235, 235);
+    padding: 5px;
+    color: black;
+}
+
+
+.filter button {
+    margin: 0 5px 0 0;
+    border-radius: 5px;
 }
 
 /* Setting the formatting for smaller screens. */
