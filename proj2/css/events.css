@@ -1,0 +1,7 @@
+.event-description {
+    display: none;
+}
+
+.event-description.visible {
+    display: block;
+}
