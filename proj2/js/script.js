@@ -1,58 +1,85 @@
-const filePath = "data/events.rss"
-const eventList = [];
+document.addEventListener('DOMContentLoaded', function() {
+    const filePath = "data/events.rss"
+    const eventList = [];
 
-fetch(filePath)
-    .then(response => response.text())
-    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-    .then(data => {
-        // console.log(data);
-        const items = data.querySelectorAll("item");
-        let html = '';
+    fetch(filePath)
+        .then(response => response.text())
+        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+        .then(data => {
+            // console.log(data);
+            const items = data.querySelectorAll("item");
 
-        items.forEach(el => {
+            items.forEach(el => {
 
-            // Store each needed tag into a variable
+                // Store each needed tag into a variable
 
-            const enclosureElement = el.querySelector("enclosure");
-            const img = enclosureElement ? enclosureElement.getAttribute("url") : "N/A";
+                const enclosureElement = el.querySelector("enclosure");
+                const img = enclosureElement ? enclosureElement.getAttribute("url") : "N/A";
 
-            const title = el.querySelector("title").textContent;
-            const tempDate = el.querySelector("start").textContent;
+                const title = el.querySelector("title").textContent;
+                const tempDate = el.querySelector("start").textContent;
 
-            // Convert date to  MMMM, dd, YYYY, TZD
-            const startDate = new Date(tempDate);
-            const options = {
-                month: 'long',
-                day: 'numeric',
-                year: 'numeric',
-                timeZoneName: 'short'
-            };
-            const formattedStartDate = startDate.toLocaleDateString('en-US', options);
+                // Convert date to  MMMM, dd, YYYY, TZD
+                const startDate = new Date(tempDate);
+                const options = {
+                    month: 'long',
+                    day: 'numeric',
+                    year: 'numeric',
+                    timeZoneName: 'short'
+                };
+                const formattedStartDate = startDate.toLocaleDateString('en-US', options);
 
-            const location = el.querySelector("location").textContent;
-            const description = el.querySelector("description").textContent;
+                const location = el.querySelector("location").textContent;
+                const description = el.querySelector("description").textContent;
 
-            /* Debugging to make sure I grabbed it all correctly
-            console.log("Image src:", img);
-            console.log("Title:", title);
-            console.log("Start Date: ", formattedStartDate);
-            console.log("Location:", location);
-            console.log("Description: ", description);
-            */
+                /* Debugging to make sure I grabbed it all correctly
+                console.log("Image src:", img);
+                console.log("Title:", title);
+                console.log("Start Date: ", formattedStartDate);
+                console.log("Location:", location);
+                console.log("Description: ", description);
+                */
 
-            const event = {
-                img: img,
-                title: title,
-                date: formattedStartDate,
-                location: location,
-                desc: description
-            };
+                const event = {
+                    img: img,
+                    title: title,
+                    date: formattedStartDate,
+                    location: location,
+                    desc: description
+                };
 
-            eventList.push(event);
+                eventList.push(event);
+
+            });
+
+            // console.log(eventList);
+            // console.log(eventList[0]);
+
+            generateArticles(eventList);
 
         });
 
-        console.log(eventList);
-        console.log(eventList[0]);
-
     });
+
+function generateArticles(eventList) {
+    console.log(eventList);
+    console.log(eventList[0]);
+
+    let html = ''
+
+    eventList.forEach(event => {
+        html += `
+            <article>
+                <img src="${event.img}" />
+                <h5>${event.title}</h5>
+                <p>${event.date}</p>
+                <p>${event.location}</p>
+            </article>
+        `;
+    });
+
+
+    const ProjectsBody = document.getElementById('projects-body');
+    ProjectsBody.innerHTML += html;
+
+}
