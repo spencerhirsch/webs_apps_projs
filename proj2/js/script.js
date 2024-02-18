@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let html = '';
         eventList.forEach(event => {
             html += `
-                <article>
+                <article class="card">
                     <img src="${event.img}" />
                     <h5>${event.title}</h5>
                     <p>${event.date}</p>
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </article>
             `;
         });
-        const ProjectsBody = document.getElementById('projects-body');
+        const ProjectsBody = document.getElementById('cardId');
         ProjectsBody.innerHTML += html;
 
         ProjectsBody.addEventListener('click', function (event) {

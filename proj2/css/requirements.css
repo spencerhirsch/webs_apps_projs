@@ -152,18 +152,8 @@ footer a:link {
     margin-top: -5px
 }
 
-.projects-body {
-    margin: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 2rem;
-    background: ECEFF1;
-}
-
-.projects-body article {
-    background: #ECEFF1;
-    border-radius: 4px;
-    overflow: hidden;
+.projects {
+    margin: 30px 10px 30px 10px;
 }
 
 .filter {
@@ -174,13 +164,38 @@ footer a:link {
     border: 0px solid white;
 }
 
-/* .filter div {
-    margin: 0 10px 0 0;
-    border-radius: 5px;
-    background: rgb(237, 235, 235);
-    padding: 5px;
-    color: black;
-} */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin: auto auto 1000px auto;  */
+}
+
+.card {
+    flex: 0 1 calc(20% - 1em);
+    margin: 0 0 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 0 0 20px 0;
+}
+
+.card p, h5 {
+    display: inline-block;
+    width: 100%;
+    word-wrap: break-word;
+    margin: 10px;
+}
+
+.card a {
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.event-description {
+    margin: 10px 0 0 10px
+}
 
 .filter-input {
     margin: 0 10px 0 0;
@@ -194,6 +209,16 @@ footer a:link {
     margin: 0 5px 0 0;
     border-radius: 5px;
     padding: 5px;
+}
+
+.learn-more-link {
+    color: black;
+    background-color: lightgray;
+    text-decoration: none;
+    border-style: none;
+    border-width: 1pt;
+    border-radius: 3px;
+    padding: 3pt;
 }
 
 /* Setting the formatting for smaller screens. */
@@ -273,7 +298,7 @@ footer a:link {
     
     .filter input{
         border: 0px solid white;
-        /* width: 90%; */
+        width: 90%;
     }
     
     .filter div {
@@ -295,6 +320,29 @@ footer a:link {
         margin: -5px 5px 0 -5px;
         width: 49%;
         padding: 10px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* margin: auto auto 1000px auto;  */
+    }
+    
+    .card {
+        flex: 0 1 calc(100% - 1em);
+        margin: 0 0 20px 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    }
+    
+    .card p {
+        display: inline-block;
+        width: 100%;
+        word-wrap: break-word;
+    }
+    
+    img {
+        width: 100%;
     }
 }
 
