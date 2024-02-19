@@ -123,6 +123,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // filtering events by description
+    function titleFilter(event, filterValue) {
+        return event.desc.toLowerCase().includes(filterValue.toLowerCase());
+    }    
+
+    // filtering events by description
     function descriptionFilter(event, filterValue) {
         return event.desc.toLowerCase().includes(filterValue.toLowerCase());
     }
