@@ -170,14 +170,16 @@ footer a:link {
     justify-content: space-between;
 }
 
+/* Creating cards to display */
 .card {
-    flex: 0 1 calc(20% - 1em);
+    flex: 0 1 calc(20% - 1em); 
     margin: 0 0 20px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     padding: 0 0 20px 0;
     width: calc(20% - 1em);
 }
 
+/* Formating content in cards */
 .card p, h5 {
     width: 95%;
     display: inline-block;
