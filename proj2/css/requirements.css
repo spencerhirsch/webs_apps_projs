@@ -167,7 +167,6 @@ footer a:link {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 /* Creating cards to display */
@@ -176,7 +175,10 @@ footer a:link {
     margin: 0 0 20px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     padding: 0 0 20px 0;
+    /* Fixing width of cards to take up 20% of the screen */
     width: calc(20% - 1em);
+    /* Ensuring spacing is correct between all cards. */
+    margin-right: 1em;
 }
 
 /* Formating content in cards */
