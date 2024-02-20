@@ -107,8 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Filtering events based on title
     function titleFilter(event, filterValue) {
-        // TODO
-        return true;
+        return event.title.toLowerCase().includes(filterValue.toLowerCase());
     }
 
     // Filtering events based on date
@@ -122,12 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
             && filterDate.getFullYear() == eventDate.getFullYear();
     }
 
-    // filtering events by description
-    function titleFilter(event, filterValue) {
-        return event.desc.toLowerCase().includes(filterValue.toLowerCase());
-    }    
-
-    // filtering events by description
+    // Filtering events by description
     function descriptionFilter(event, filterValue) {
         return event.desc.toLowerCase().includes(filterValue.toLowerCase());
     }
@@ -135,7 +129,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // clear filter button listener
     const clearButton = document.getElementById("clear");
     clearButton.addEventListener("click", function () {
-    // Show original event list
+        // Clear filter text
+        document.getElementById("title-id").value = "";
+        document.getElementById("date-id").value = "";
+        document.getElementById("description-id").value = "";
+
+        // Show original event list
         generateArticles(eventList);
     });
 });
