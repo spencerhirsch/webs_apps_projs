@@ -1,13 +1,16 @@
 "use strict";
 
+// Main event listener for when the DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
-    const filePath = "data/events.rss";
-    const eventList = [];
+    const filePath = "data/events.rss";     // link to rss feed
+    const eventList = [];                  // Init empty array to store event objects into
 
+    // fetching rss feed
     fetch(filePath)
         .then(response => response.text())
         .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
         .then(data => {
+            // grabbing and iterating through each item in the feed
             const items = data.querySelectorAll("item");
 
             items.forEach(el => {
@@ -20,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 const location = el.querySelector("location").textContent;
                 const description = el.querySelector("description").textContent;
-
+                // creating event object, and pushing onto the evenList array
                 const event = {
                     img: img,
                     title: title,
