@@ -131,4 +131,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function descriptionFilter(event, filterValue) {
         return event.desc.toLowerCase().includes(filterValue.toLowerCase());
     }
+
+    // clear filter button listener
+    const clearButton = document.getElementById("clear");
+    clearButton.addEventListener("click", function () {
+    // Show original event list
+        generateArticles(eventList);
+    });
 });
