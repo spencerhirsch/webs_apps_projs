@@ -74,11 +74,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const ProjectsBody = document.getElementById("cardId");
         ProjectsBody.innerHTML = html;
 
-        ProjectsBody.addEventListener("click", function (event) {
+        // Hook for all "Learn more" button clicks
+        ProjectsBody.onclick = function (event) {
             if (event.target.classList.contains("learn-more-link")) {
                 toggleDescription(event);
             }
-        });
+        };
     }
 
     // submit button listener
