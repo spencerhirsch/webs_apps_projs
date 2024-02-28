@@ -1,0 +1,1574 @@
+[
+  {
+    "gender": "female",
+    "name": {
+      "title": "Miss",
+      "first": "Jenny",
+      "last": "Dean"
+    },
+    "location": {
+      "street": {
+        "number": 4866,
+        "name": "Dublin Road"
+      },
+      "city": "Waterford",
+      "state": "Kerry",
+      "country": "Ireland",
+      "postcode": 38794,
+      "coordinates": {
+        "latitude": "0.0538",
+        "longitude": "155.1764"
+      },
+      "timezone": {
+        "offset": "-3:00",
+        "description": "Brazil, Buenos Aires, Georgetown"
+      }
+    },
+    "email": "jenny.dean@example.com",
+    "login": {
+      "uuid": "730572f6-5858-472e-a09c-6b5c8c7046bf",
+      "username": "smallkoala749",
+      "password": "mariposa",
+      "salt": "FxIDk64a",
+      "md5": "bf166335995920ab1335a1a336627622",
+      "sha1": "652ba79a62633ccbd401284e25bed21ac09cc85b",
+      "sha256": "6625163603c073cd71e85fd40096840bde3ebe14263f9ce2c2fbb140a4effffa"
+    },
+    "dob": {
+      "date": "1964-05-08T07:54:22.187Z",
+      "age": 59
+    },
+    "registered": {
+      "date": "2018-01-26T17:54:47.398Z",
+      "age": 6
+    },
+    "phone": "061-402-4794",
+    "cell": "081-281-1422",
+    "id": {
+      "name": "PPS",
+      "value": "6873344T"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/51.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/51.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/51.jpg"
+    },
+    "nat": "IE",
+    "purchases": [
+      {
+        "productID": 11,
+        "quantity": 5
+      },
+      {
+        "productID": 18,
+        "quantity": 1
+      },
+      {
+        "productID": 5,
+        "quantity": 8
+      },
+      {
+        "productID": 9,
+        "quantity": 7
+      },
+      {
+        "productID": 1,
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Morris",
+      "last": "Armstrong"
+    },
+    "location": {
+      "street": {
+        "number": 134,
+        "name": "York Road"
+      },
+      "city": "Newry",
+      "state": "Grampian",
+      "country": "United Kingdom",
+      "postcode": "E1 8UJ",
+      "coordinates": {
+        "latitude": "-11.5781",
+        "longitude": "-37.5323"
+      },
+      "timezone": {
+        "offset": "0:00",
+        "description": "Western Europe Time, London, Lisbon, Casablanca"
+      }
+    },
+    "email": "morris.armstrong@example.com",
+    "login": {
+      "uuid": "b070f966-fa22-4260-a33c-b356366fd0c3",
+      "username": "brownrabbit764",
+      "password": "cheng",
+      "salt": "8MklixaM",
+      "md5": "3924cdd3ec70c1a42ca4702f46d85050",
+      "sha1": "6fa194dcf0cfae3c06cd32d1ac746716bec67b7c",
+      "sha256": "6234ea7a40d3adc8a2bf5bb0c7706b0452e535ad62543c184f2f8619c4e6cddd"
+    },
+    "dob": {
+      "date": "1955-09-22T14:25:11.075Z",
+      "age": 68
+    },
+    "registered": {
+      "date": "2008-11-08T14:46:40.877Z",
+      "age": 15
+    },
+    "phone": "016974 30180",
+    "cell": "07103 920330",
+    "id": {
+      "name": "NINO",
+      "value": "SC 85 67 64 K"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/42.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/42.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/42.jpg"
+    },
+    "nat": "GB",
+    "purchases": [
+      {
+        "productID": 14,
+        "quantity": 1
+      },
+      {
+        "productID": 6,
+        "quantity": 6
+      },
+      {
+        "productID": 12,
+        "quantity": 3
+      },
+      {
+        "productID": 4,
+        "quantity": 6
+      },
+      {
+        "productID": 3,
+        "quantity": 4
+      },
+      {
+        "productID": 18,
+        "quantity": 8
+      },
+      {
+        "productID": 1,
+        "quantity": 7
+      },
+      {
+        "productID": 7,
+        "quantity": 6
+      },
+      {
+        "productID": 19,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "gender": "female",
+    "name": {
+      "title": "Mrs",
+      "first": "Susie",
+      "last": "Reyes"
+    },
+    "location": {
+      "street": {
+        "number": 6791,
+        "name": "Manor Road"
+      },
+      "city": "Killarney",
+      "state": "Monaghan",
+      "country": "Ireland",
+      "postcode": 53258,
+      "coordinates": {
+        "latitude": "-3.6381",
+        "longitude": "60.6406"
+      },
+      "timezone": {
+        "offset": "-1:00",
+        "description": "Azores, Cape Verde Islands"
+      }
+    },
+    "email": "susie.reyes@example.com",
+    "login": {
+      "uuid": "ec76a67a-751c-4bec-ab09-25d212c392f5",
+      "username": "purpledog433",
+      "password": "484848",
+      "salt": "uhVS5XQQ",
+      "md5": "7a622d88de69f24eb86b20eb779ebf79",
+      "sha1": "77b970ec1877031f547090512999236b3b88b43f",
+      "sha256": "fd236ac791e2fa2839a456533e311e47ec56c712f2c324e3d092ef46c6ed4c2b"
+    },
+    "dob": {
+      "date": "1993-11-10T19:29:53.627Z",
+      "age": 30
+    },
+    "registered": {
+      "date": "2005-10-24T20:27:08.040Z",
+      "age": 18
+    },
+    "phone": "021-826-1932",
+    "cell": "081-633-7621",
+    "id": {
+      "name": "PPS",
+      "value": "2378661T"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/7.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/7.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/7.jpg"
+    },
+    "nat": "IE",
+    "purchases": [
+      {
+        "productID": 19,
+        "quantity": 7
+      },
+      {
+        "productID": 18,
+        "quantity": 7
+      },
+      {
+        "productID": 17,
+        "quantity": 2
+      },
+      {
+        "productID": 1,
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "gender": "female",
+    "name": {
+      "title": "Miss",
+      "first": "Silvia",
+      "last": "Herrero"
+    },
+    "location": {
+      "street": {
+        "number": 4209,
+        "name": "Calle del Pez"
+      },
+      "city": "Jerez de la Frontera",
+      "state": "La Rioja",
+      "country": "Spain",
+      "postcode": 87299,
+      "coordinates": {
+        "latitude": "-37.9037",
+        "longitude": "59.6498"
+      },
+      "timezone": {
+        "offset": "+2:00",
+        "description": "Kaliningrad, South Africa"
+      }
+    },
+    "email": "silvia.herrero@example.com",
+    "login": {
+      "uuid": "d6186c6b-d1dc-4ba6-b86b-5ceed693f469",
+      "username": "sadfrog814",
+      "password": "gonavy",
+      "salt": "f1YROy8I",
+      "md5": "ef75a60ccb824b7a3f79e80353ffb77c",
+      "sha1": "62b9812fad3cf50f547e528daa47502212f4d096",
+      "sha256": "369d5bafdc1e4c8953c6847db5114bb290d2981297b8143d7827627221fb5528"
+    },
+    "dob": {
+      "date": "1996-10-28T19:40:04.942Z",
+      "age": 27
+    },
+    "registered": {
+      "date": "2020-05-24T22:18:27.344Z",
+      "age": 3
+    },
+    "phone": "946-193-453",
+    "cell": "641-349-025",
+    "id": {
+      "name": "DNI",
+      "value": "19557767-G"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/81.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/81.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/81.jpg"
+    },
+    "nat": "ES",
+    "purchases": [
+      {
+        "productID": 5,
+        "quantity": 2
+      },
+      {
+        "productID": 17,
+        "quantity": 5
+      },
+      {
+        "productID": 12,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Gökhan",
+      "last": "Doğan"
+    },
+    "location": {
+      "street": {
+        "number": 9516,
+        "name": "Maçka Cd"
+      },
+      "city": "Osmaniye",
+      "state": "Giresun",
+      "country": "Turkey",
+      "postcode": 45075,
+      "coordinates": {
+        "latitude": "65.8559",
+        "longitude": "-142.7328"
+      },
+      "timezone": {
+        "offset": "+9:00",
+        "description": "Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
+      }
+    },
+    "email": "gokhan.dogan@example.com",
+    "login": {
+      "uuid": "74efbf56-657c-4152-9ff8-646df7e1cb4d",
+      "username": "whiteleopard482",
+      "password": "yong",
+      "salt": "zwBWfuie",
+      "md5": "6aa2182b18de126ce138c79b40ce97ac",
+      "sha1": "dd650eb377598f3047b6c9952183ff1ca1c7dd75",
+      "sha256": "5399557d99a99f78703e9ad026086b9a31961f6c474428f8616fc9ab44bdfa38"
+    },
+    "dob": {
+      "date": "1961-05-03T04:07:17.175Z",
+      "age": 62
+    },
+    "registered": {
+      "date": "2010-06-21T21:18:26.268Z",
+      "age": 13
+    },
+    "phone": "(949)-186-2823",
+    "cell": "(045)-081-0518",
+    "id": {
+      "name": "",
+      "value": null
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/81.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/81.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/81.jpg"
+    },
+    "nat": "TR",
+    "purchases": [
+      {
+        "productID": 8,
+        "quantity": 1
+      },
+      {
+        "productID": 1,
+        "quantity": 1
+      },
+      {
+        "productID": 13,
+        "quantity": 5
+      },
+      {
+        "productID": 14,
+        "quantity": 4
+      },
+      {
+        "productID": 3,
+        "quantity": 5
+      },
+      {
+        "productID": 16,
+        "quantity": 8
+      },
+      {
+        "productID": 12,
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "gender": "female",
+    "name": {
+      "title": "Mrs",
+      "first": "Emma",
+      "last": "Olsen"
+    },
+    "location": {
+      "street": {
+        "number": 4138,
+        "name": "Strandvej"
+      },
+      "city": "Allinge",
+      "state": "Midtjylland",
+      "country": "Denmark",
+      "postcode": 44601,
+      "coordinates": {
+        "latitude": "-39.3349",
+        "longitude": "117.6378"
+      },
+      "timezone": {
+        "offset": "-5:00",
+        "description": "Eastern Time (US & Canada), Bogota, Lima"
+      }
+    },
+    "email": "emma.olsen@example.com",
+    "login": {
+      "uuid": "4b636c06-6c82-48b4-b2a3-0709baffd7c5",
+      "username": "brownbear525",
+      "password": "outside",
+      "salt": "YHkFUrDk",
+      "md5": "db7c9e957b921702a469c135c3685ec4",
+      "sha1": "5a0bc52855a0365156b95bc5a67e8bdcc04cece4",
+      "sha256": "60ace062fa11792ec6f482b1ffed20a185ca726d696d64098bb98284c7d5b7e5"
+    },
+    "dob": {
+      "date": "1946-05-11T22:44:35.120Z",
+      "age": 77
+    },
+    "registered": {
+      "date": "2014-03-09T15:59:19.831Z",
+      "age": 9
+    },
+    "phone": "69984838",
+    "cell": "18022079",
+    "id": {
+      "name": "CPR",
+      "value": "110546-2804"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/72.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/72.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/72.jpg"
+    },
+    "nat": "DK",
+    "purchases": [
+      {
+        "productID": 16,
+        "quantity": 6
+      },
+      {
+        "productID": 17,
+        "quantity": 2
+      },
+      {
+        "productID": 5,
+        "quantity": 1
+      },
+      {
+        "productID": 7,
+        "quantity": 3
+      },
+      {
+        "productID": 1,
+        "quantity": 6
+      },
+      {
+        "productID": 13,
+        "quantity": 9
+      },
+      {
+        "productID": 11,
+        "quantity": 5
+      },
+      {
+        "productID": 4,
+        "quantity": 9
+      },
+      {
+        "productID": 3,
+        "quantity": 9
+      }
+    ]
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Önal",
+      "last": "Özgörkey"
+    },
+    "location": {
+      "street": {
+        "number": 9118,
+        "name": "Filistin Cd"
+      },
+      "city": "Kilis",
+      "state": "Yozgat",
+      "country": "Turkey",
+      "postcode": 88747,
+      "coordinates": {
+        "latitude": "68.9815",
+        "longitude": "-147.4853"
+      },
+      "timezone": {
+        "offset": "+9:30",
+        "description": "Adelaide, Darwin"
+      }
+    },
+    "email": "onal.ozgorkey@example.com",
+    "login": {
+      "uuid": "dfee9fdd-8d75-47e0-8a6c-9dd0bdf301f3",
+      "username": "greenrabbit634",
+      "password": "newlife",
+      "salt": "F1DvC4aV",
+      "md5": "ca0ff85e1c202898e6e8159968a6a68e",
+      "sha1": "fc80580b4b9958d5fbda36e4a63ea896feda9c78",
+      "sha256": "0202f30ca7b78ce297a89416630b43ecf7604864641f41fca1b089283a4b8343"
+    },
+    "dob": {
+      "date": "1993-10-09T18:24:40.065Z",
+      "age": 30
+    },
+    "registered": {
+      "date": "2019-05-19T05:03:04.495Z",
+      "age": 4
+    },
+    "phone": "(689)-200-9289",
+    "cell": "(054)-348-8025",
+    "id": {
+      "name": "",
+      "value": null
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/5.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/5.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/5.jpg"
+    },
+    "nat": "TR",
+    "purchases": [
+      {
+        "productID": 11,
+        "quantity": 8
+      },
+      {
+        "productID": 1,
+        "quantity": 7
+      },
+      {
+        "productID": 16,
+        "quantity": 6
+      },
+      {
+        "productID": 5,
+        "quantity": 1
+      },
+      {
+        "productID": 2,
+        "quantity": 8
+      },
+      {
+        "productID": 9,
+        "quantity": 9
+      },
+      {
+        "productID": 17,
+        "quantity": 8
+      },
+      {
+        "productID": 3,
+        "quantity": 5
+      },
+      {
+        "productID": 4,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "gender": "female",
+    "name": {
+      "title": "Mrs",
+      "first": "رونیکا",
+      "last": "کریمی"
+    },
+    "location": {
+      "street": {
+        "number": 7568,
+        "name": "امام خمینی"
+      },
+      "city": "شیراز",
+      "state": "خراسان رضوی",
+      "country": "Iran",
+      "postcode": 30235,
+      "coordinates": {
+        "latitude": "13.0311",
+        "longitude": "156.6364"
+      },
+      "timezone": {
+        "offset": "+4:00",
+        "description": "Abu Dhabi, Muscat, Baku, Tbilisi"
+      }
+    },
+    "email": "rwnykh.khrymy@example.com",
+    "login": {
+      "uuid": "6e79c195-30c6-4526-9727-dbbd7c4627dd",
+      "username": "lazysnake732",
+      "password": "bloody",
+      "salt": "dUxuiAfD",
+      "md5": "f50b88c8a5b0ffbee95fc6bb0604d018",
+      "sha1": "513729769813cca4247f3004bb850af6b073d367",
+      "sha256": "38f27d73e0628a39ff5c468ccf671359d940edaf3a357ca753fd10ecf684ee6c"
+    },
+    "dob": {
+      "date": "1983-11-04T06:36:27.387Z",
+      "age": 40
+    },
+    "registered": {
+      "date": "2019-02-06T11:08:05.253Z",
+      "age": 5
+    },
+    "phone": "073-41488814",
+    "cell": "0966-407-0449",
+    "id": {
+      "name": "",
+      "value": null
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/44.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/44.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/44.jpg"
+    },
+    "nat": "IR",
+    "purchases": [
+      {
+        "productID": 8,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "gender": "female",
+    "name": {
+      "title": "Miss",
+      "first": "Aliya",
+      "last": "Reime"
+    },
+    "location": {
+      "street": {
+        "number": 2258,
+        "name": "Nypeveien"
+      },
+      "city": "Siggerud",
+      "state": "Møre og Romsdal",
+      "country": "Norway",
+      "postcode": "5908",
+      "coordinates": {
+        "latitude": "41.4547",
+        "longitude": "63.5670"
+      },
+      "timezone": {
+        "offset": "+2:00",
+        "description": "Kaliningrad, South Africa"
+      }
+    },
+    "email": "aliya.reime@example.com",
+    "login": {
+      "uuid": "0a2839b6-fc79-4c95-976d-8c875ec6b45f",
+      "username": "ticklishleopard811",
+      "password": "gretzky",
+      "salt": "XDMVJt2E",
+      "md5": "c3dfaace089182543198586758515b4f",
+      "sha1": "bf9531f158b176d34bee531f172ba557519d3cca",
+      "sha256": "db41ac2c7516cfdfbea0671450f73e1cb6d63cbfa7c91dd242c2e2f5b12c607a"
+    },
+    "dob": {
+      "date": "1976-01-21T14:07:01.174Z",
+      "age": 48
+    },
+    "registered": {
+      "date": "2012-03-29T03:19:57.834Z",
+      "age": 11
+    },
+    "phone": "87473393",
+    "cell": "45405265",
+    "id": {
+      "name": "FN",
+      "value": "21017632083"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/31.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/31.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/31.jpg"
+    },
+    "nat": "NO",
+    "purchases": [
+      {
+        "productID": 16,
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Davut",
+      "last": "Ağaoğlu"
+    },
+    "location": {
+      "street": {
+        "number": 1924,
+        "name": "Anafartalar Cd"
+      },
+      "city": "Tokat",
+      "state": "Osmaniye",
+      "country": "Turkey",
+      "postcode": 68937,
+      "coordinates": {
+        "latitude": "65.0231",
+        "longitude": "-88.5046"
+      },
+      "timezone": {
+        "offset": "+2:00",
+        "description": "Kaliningrad, South Africa"
+      }
+    },
+    "email": "davut.agaoglu@example.com",
+    "login": {
+      "uuid": "42831bfa-bc85-4881-a799-c30a7f8009cd",
+      "username": "organicmeercat806",
+      "password": "hotbox",
+      "salt": "QXGtGHfi",
+      "md5": "1956c9896da86cc96ebaf5efc14fc736",
+      "sha1": "7c56d2802e627f24f4cfe91ce4cb1963d6cf62c6",
+      "sha256": "1e2d8d05a6e00ad3d0fb1e0a73d3513b8e588e3afa40dfabc7f591c3c6999352"
+    },
+    "dob": {
+      "date": "1958-10-16T22:35:22.883Z",
+      "age": 65
+    },
+    "registered": {
+      "date": "2003-01-02T07:02:57.348Z",
+      "age": 21
+    },
+    "phone": "(495)-005-7884",
+    "cell": "(520)-089-7245",
+    "id": {
+      "name": "",
+      "value": null
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/65.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/65.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/65.jpg"
+    },
+    "nat": "TR",
+    "purchases": [
+      {
+        "productID": 16,
+        "quantity": 1
+      },
+      {
+        "productID": 10,
+        "quantity": 1
+      },
+      {
+        "productID": 8,
+        "quantity": 4
+      },
+      {
+        "productID": 7,
+        "quantity": 9
+      },
+      {
+        "productID": 19,
+        "quantity": 3
+      },
+      {
+        "productID": 13,
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "gender": "female",
+    "name": {
+      "title": "Ms",
+      "first": "Lena",
+      "last": "Holland"
+    },
+    "location": {
+      "street": {
+        "number": 4707,
+        "name": "Frances Ct"
+      },
+      "city": "Fort Wayne",
+      "state": "Rhode Island",
+      "country": "United States",
+      "postcode": 50701,
+      "coordinates": {
+        "latitude": "81.9413",
+        "longitude": "1.3429"
+      },
+      "timezone": {
+        "offset": "-1:00",
+        "description": "Azores, Cape Verde Islands"
+      }
+    },
+    "email": "lena.holland@example.com",
+    "login": {
+      "uuid": "96b6745c-7518-485b-b6f3-e1b474a933b1",
+      "username": "bluetiger176",
+      "password": "yankees",
+      "salt": "wfGHwTSz",
+      "md5": "8e2bbdd9af1cd8995479f726d4992a7c",
+      "sha1": "89617ff5d57a332b494e52122c5efd969c19f9b1",
+      "sha256": "d68dfe8531c2cf8f6cd1982a41b9ac9c4449faaf6b57bc22fb89e78cbee340e4"
+    },
+    "dob": {
+      "date": "1986-03-25T23:16:54.615Z",
+      "age": 37
+    },
+    "registered": {
+      "date": "2008-02-07T08:39:54.510Z",
+      "age": 16
+    },
+    "phone": "(466) 326-1874",
+    "cell": "(315) 576-1468",
+    "id": {
+      "name": "SSN",
+      "value": "498-36-8530"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/46.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/46.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/46.jpg"
+    },
+    "nat": "US",
+    "purchases": [
+      {
+        "productID": 7,
+        "quantity": 9
+      },
+      {
+        "productID": 6,
+        "quantity": 4
+      },
+      {
+        "productID": 5,
+        "quantity": 3
+      },
+      {
+        "productID": 10,
+        "quantity": 7
+      }
+    ]
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Tanveer",
+      "last": "Kamath"
+    },
+    "location": {
+      "street": {
+        "number": 7764,
+        "name": "Chimanlal Girdharlal Rd"
+      },
+      "city": "Bilaspur",
+      "state": "Kerala",
+      "country": "India",
+      "postcode": 26252,
+      "coordinates": {
+        "latitude": "12.4587",
+        "longitude": "-176.9826"
+      },
+      "timezone": {
+        "offset": "0:00",
+        "description": "Western Europe Time, London, Lisbon, Casablanca"
+      }
+    },
+    "email": "tanveer.kamath@example.com",
+    "login": {
+      "uuid": "e67c2372-3aea-4701-a544-58af4faa8a6c",
+      "username": "brownelephant420",
+      "password": "foxylady",
+      "salt": "mO6OCahA",
+      "md5": "bbaf63c2cba7705f95f07e289587675b",
+      "sha1": "1bdd810cb78d4d01ae295dc749ec9091a21b4ca0",
+      "sha256": "d81b571fb4e2f9c262592f8e721da171443dddb0af73c92169a858193dcedb7e"
+    },
+    "dob": {
+      "date": "1976-05-09T15:56:28.054Z",
+      "age": 47
+    },
+    "registered": {
+      "date": "2015-04-20T13:50:20.021Z",
+      "age": 8
+    },
+    "phone": "7966564768",
+    "cell": "9857992356",
+    "id": {
+      "name": "UIDAI",
+      "value": "259575571574"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/97.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/97.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/97.jpg"
+    },
+    "nat": "IN",
+    "purchases": [
+      {
+        "productID": 2,
+        "quantity": 7
+      },
+      {
+        "productID": 9,
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Finn",
+      "last": "Hughes"
+    },
+    "location": {
+      "street": {
+        "number": 9628,
+        "name": "Carrington Road"
+      },
+      "city": "Porirua",
+      "state": "Canterbury",
+      "country": "New Zealand",
+      "postcode": 40849,
+      "coordinates": {
+        "latitude": "48.8205",
+        "longitude": "-33.8955"
+      },
+      "timezone": {
+        "offset": "+9:00",
+        "description": "Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
+      }
+    },
+    "email": "finn.hughes@example.com",
+    "login": {
+      "uuid": "54df1a25-2e86-4124-bebf-4f1ecafb171c",
+      "username": "sadzebra343",
+      "password": "timeout",
+      "salt": "h4Fyfjs8",
+      "md5": "2eda0f08c32139b3bc2144a879e2d8c9",
+      "sha1": "d9b52ff2f2d8feea30e1862a4456ab30b714abec",
+      "sha256": "cbbf478ee211347321746253b0f7a4e75597f7d1da6390bd123de594ed4b7bda"
+    },
+    "dob": {
+      "date": "2000-03-01T06:41:16.347Z",
+      "age": 23
+    },
+    "registered": {
+      "date": "2004-08-30T12:08:55.654Z",
+      "age": 19
+    },
+    "phone": "(769)-714-0786",
+    "cell": "(224)-360-7727",
+    "id": {
+      "name": "",
+      "value": null
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/92.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/92.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/92.jpg"
+    },
+    "nat": "NZ",
+    "purchases": [
+      {
+        "productID": 5,
+        "quantity": 1
+      },
+      {
+        "productID": 15,
+        "quantity": 8
+      },
+      {
+        "productID": 10,
+        "quantity": 1
+      },
+      {
+        "productID": 6,
+        "quantity": 8
+      },
+      {
+        "productID": 17,
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Art",
+      "last": "Newman"
+    },
+    "location": {
+      "street": {
+        "number": 9561,
+        "name": "Church Street"
+      },
+      "city": "Bradford",
+      "state": "Surrey",
+      "country": "United Kingdom",
+      "postcode": "FV72 8DB",
+      "coordinates": {
+        "latitude": "-8.4923",
+        "longitude": "-17.6874"
+      },
+      "timezone": {
+        "offset": "0:00",
+        "description": "Western Europe Time, London, Lisbon, Casablanca"
+      }
+    },
+    "email": "art.newman@example.com",
+    "login": {
+      "uuid": "1a7f21dc-0c82-4686-b289-fd1384cb7c6a",
+      "username": "orangelion957",
+      "password": "berkeley",
+      "salt": "bXIjyFzo",
+      "md5": "e413c86920520875a390a7b7fc86df3a",
+      "sha1": "38f854e5af97b6e66981c6c6d38bd9e23077d1b5",
+      "sha256": "295642515d0a00cf12be330a3519cacadc701bf9c43650cdb794a7d779225c8a"
+    },
+    "dob": {
+      "date": "1992-01-26T16:25:13.439Z",
+      "age": 32
+    },
+    "registered": {
+      "date": "2004-07-23T12:12:32.629Z",
+      "age": 19
+    },
+    "phone": "015242 29435",
+    "cell": "07060 122558",
+    "id": {
+      "name": "NINO",
+      "value": "JM 90 56 80 P"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/19.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/19.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/19.jpg"
+    },
+    "nat": "GB",
+    "purchases": [
+      {
+        "productID": 1,
+        "quantity": 8
+      },
+      {
+        "productID": 18,
+        "quantity": 4
+      },
+      {
+        "productID": 3,
+        "quantity": 7
+      },
+      {
+        "productID": 11,
+        "quantity": 4
+      },
+      {
+        "productID": 7,
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Kent",
+      "last": "Sanders"
+    },
+    "location": {
+      "street": {
+        "number": 5224,
+        "name": "Frances Ct"
+      },
+      "city": "Oklahoma City",
+      "state": "Arizona",
+      "country": "United States",
+      "postcode": 43589,
+      "coordinates": {
+        "latitude": "87.6136",
+        "longitude": "-35.5026"
+      },
+      "timezone": {
+        "offset": "-8:00",
+        "description": "Pacific Time (US & Canada)"
+      }
+    },
+    "email": "kent.sanders@example.com",
+    "login": {
+      "uuid": "9c284a05-7b95-428b-a3fc-b92e1af4d4c6",
+      "username": "yellowrabbit744",
+      "password": "carrera",
+      "salt": "EUKtkFSA",
+      "md5": "9ee52a4e4cadc431b71eedf551dfcb48",
+      "sha1": "9ae29b0a1ca2d6a4a90e46ee06064ffdf8896162",
+      "sha256": "8a4659ce6819d1bff466eb653d93a282fc2057edd584a574c9f1de961d3da558"
+    },
+    "dob": {
+      "date": "1978-09-26T01:18:51.582Z",
+      "age": 45
+    },
+    "registered": {
+      "date": "2005-08-19T05:57:16.904Z",
+      "age": 18
+    },
+    "phone": "(269) 482-7358",
+    "cell": "(316) 606-0180",
+    "id": {
+      "name": "SSN",
+      "value": "320-74-8038"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/93.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/93.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/93.jpg"
+    },
+    "nat": "US",
+    "purchases": [
+      {
+        "productID": 12,
+        "quantity": 6
+      },
+      {
+        "productID": 2,
+        "quantity": 2
+      },
+      {
+        "productID": 17,
+        "quantity": 6
+      },
+      {
+        "productID": 4,
+        "quantity": 6
+      },
+      {
+        "productID": 19,
+        "quantity": 9
+      },
+      {
+        "productID": 11,
+        "quantity": 2
+      },
+      {
+        "productID": 3,
+        "quantity": 8
+      }
+    ]
+  },
+  {
+    "gender": "female",
+    "name": {
+      "title": "Ms",
+      "first": "Flora",
+      "last": "Deschamps"
+    },
+    "location": {
+      "street": {
+        "number": 105,
+        "name": "Rue Bony"
+      },
+      "city": "Caen",
+      "state": "Charente",
+      "country": "France",
+      "postcode": 84939,
+      "coordinates": {
+        "latitude": "-16.2250",
+        "longitude": "137.2726"
+      },
+      "timezone": {
+        "offset": "-1:00",
+        "description": "Azores, Cape Verde Islands"
+      }
+    },
+    "email": "flora.deschamps@example.com",
+    "login": {
+      "uuid": "63c60632-d2d5-42c8-b2fa-bda7e3a6b939",
+      "username": "redpanda861",
+      "password": "yoyoyo",
+      "salt": "hZukWGEh",
+      "md5": "f931603348a0bb8600c3485164df806d",
+      "sha1": "e2a3f8cbd77e9bbb6d42a8b054f25c23abe4baa6",
+      "sha256": "205c6d84b606a8ca04fc9e8643aeb4ce183c5ab1c2f14ed8086d63d6f9f42ac5"
+    },
+    "dob": {
+      "date": "1982-02-21T23:08:35.972Z",
+      "age": 42
+    },
+    "registered": {
+      "date": "2011-06-14T09:07:18.550Z",
+      "age": 12
+    },
+    "phone": "02-63-75-26-34",
+    "cell": "06-60-06-46-55",
+    "id": {
+      "name": "INSEE",
+      "value": "2820165926203 13"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/87.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/87.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/87.jpg"
+    },
+    "nat": "FR",
+    "purchases": [
+      {
+        "productID": 3,
+        "quantity": 1
+      },
+      {
+        "productID": 6,
+        "quantity": 3
+      },
+      {
+        "productID": 4,
+        "quantity": 7
+      },
+      {
+        "productID": 7,
+        "quantity": 8
+      },
+      {
+        "productID": 9,
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Evan",
+      "last": "Robin"
+    },
+    "location": {
+      "street": {
+        "number": 9611,
+        "name": "Avenue de l'Abbé-Roussel"
+      },
+      "city": "Strasbourg",
+      "state": "Ariège",
+      "country": "France",
+      "postcode": 46333,
+      "coordinates": {
+        "latitude": "-16.2619",
+        "longitude": "-145.6626"
+      },
+      "timezone": {
+        "offset": "+9:00",
+        "description": "Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
+      }
+    },
+    "email": "evan.robin@example.com",
+    "login": {
+      "uuid": "4eef0d16-9239-44c4-b012-13a6f3d0d3ce",
+      "username": "bigdog194",
+      "password": "3030",
+      "salt": "JimMrUpQ",
+      "md5": "2addb9e383c8caa2628adb73322ca209",
+      "sha1": "840e106bd3f32b63ee56544cf967d1c0a068a9f8",
+      "sha256": "5f5354b8f45d7038db6e32019f9734d58a54c889e0fee4852ba20a90fead7950"
+    },
+    "dob": {
+      "date": "1955-05-15T20:20:43.351Z",
+      "age": 68
+    },
+    "registered": {
+      "date": "2015-05-24T02:12:30.359Z",
+      "age": 8
+    },
+    "phone": "05-28-08-18-94",
+    "cell": "06-23-82-21-62",
+    "id": {
+      "name": "INSEE",
+      "value": "1550452023762 89"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/41.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/41.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/41.jpg"
+    },
+    "nat": "FR",
+    "purchases": [
+      {
+        "productID": 18,
+        "quantity": 2
+      },
+      {
+        "productID": 3,
+        "quantity": 4
+      },
+      {
+        "productID": 12,
+        "quantity": 4
+      },
+      {
+        "productID": 11,
+        "quantity": 3
+      },
+      {
+        "productID": 9,
+        "quantity": 1
+      },
+      {
+        "productID": 13,
+        "quantity": 8
+      },
+      {
+        "productID": 7,
+        "quantity": 8
+      },
+      {
+        "productID": 15,
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Yunnuel",
+      "last": "Alcaraz"
+    },
+    "location": {
+      "street": {
+        "number": 6754,
+        "name": "Periférico Guerrero"
+      },
+      "city": "Panotla",
+      "state": "Sonora",
+      "country": "Mexico",
+      "postcode": 32271,
+      "coordinates": {
+        "latitude": "26.9245",
+        "longitude": "-63.2687"
+      },
+      "timezone": {
+        "offset": "-3:00",
+        "description": "Brazil, Buenos Aires, Georgetown"
+      }
+    },
+    "email": "yunnuel.alcaraz@example.com",
+    "login": {
+      "uuid": "f05ac9c3-59f4-482c-89f8-c6b0a30d18ce",
+      "username": "yellowleopard812",
+      "password": "monalisa",
+      "salt": "vK8rFkVG",
+      "md5": "1403a6d9608e3687fdc03376f7b5410d",
+      "sha1": "8fa3b4ebb575fff03b73b5d96ec5f0cc55b3a995",
+      "sha256": "d1f04d01909651bfeb9159d687176815968fbc6663c21f6e6a4a420cf4333c6e"
+    },
+    "dob": {
+      "date": "1969-06-20T09:30:07.207Z",
+      "age": 54
+    },
+    "registered": {
+      "date": "2016-11-12T08:57:16.356Z",
+      "age": 7
+    },
+    "phone": "(662) 080 5799",
+    "cell": "(623) 662 7490",
+    "id": {
+      "name": "NSS",
+      "value": "16 34 19 1016 8"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/0.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/0.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/0.jpg"
+    },
+    "nat": "MX",
+    "purchases": [
+      {
+        "productID": 2,
+        "quantity": 5
+      },
+      {
+        "productID": 9,
+        "quantity": 8
+      },
+      {
+        "productID": 11,
+        "quantity": 3
+      },
+      {
+        "productID": 13,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Mr",
+      "first": "Hudson",
+      "last": "Thomas"
+    },
+    "location": {
+      "street": {
+        "number": 2073,
+        "name": "Atkinson Avenue"
+      },
+      "city": "Christchurch",
+      "state": "Bay of Plenty",
+      "country": "New Zealand",
+      "postcode": 41718,
+      "coordinates": {
+        "latitude": "49.6543",
+        "longitude": "-134.7874"
+      },
+      "timezone": {
+        "offset": "-10:00",
+        "description": "Hawaii"
+      }
+    },
+    "email": "hudson.thomas@example.com",
+    "login": {
+      "uuid": "7b130115-5bc0-41cb-a899-7ebddf0084e3",
+      "username": "organicmeercat538",
+      "password": "kittykat",
+      "salt": "wSWbfVTi",
+      "md5": "52a9ffa53a0a7ee3894c97c37c301e5e",
+      "sha1": "d88531ca7a3ac6ae4d3a64f4d00578cde42050a3",
+      "sha256": "d8b7033413acd9ab1340e05da5d6f3f1aa2d1644bf3daf2b96694ce844c7f18e"
+    },
+    "dob": {
+      "date": "1996-10-25T04:39:36.054Z",
+      "age": 27
+    },
+    "registered": {
+      "date": "2017-02-16T12:09:08.620Z",
+      "age": 7
+    },
+    "phone": "(890)-052-9258",
+    "cell": "(178)-841-3538",
+    "id": {
+      "name": "",
+      "value": null
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/84.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/84.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/84.jpg"
+    },
+    "nat": "NZ",
+    "purchases": [
+      {
+        "productID": 1,
+        "quantity": 9
+      },
+      {
+        "productID": 2,
+        "quantity": 3
+      },
+      {
+        "productID": 5,
+        "quantity": 3
+      },
+      {
+        "productID": 12,
+        "quantity": 5
+      },
+      {
+        "productID": 8,
+        "quantity": 2
+      },
+      {
+        "productID": 18,
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Monsieur",
+      "first": "Jonas",
+      "last": "Blanchard"
+    },
+    "location": {
+      "street": {
+        "number": 3366,
+        "name": "Quai Chauveau"
+      },
+      "city": "Tavannes",
+      "state": "Aargau",
+      "country": "Switzerland",
+      "postcode": 8536,
+      "coordinates": {
+        "latitude": "-58.7728",
+        "longitude": "-154.5334"
+      },
+      "timezone": {
+        "offset": "-9:00",
+        "description": "Alaska"
+      }
+    },
+    "email": "jonas.blanchard@example.com",
+    "login": {
+      "uuid": "81155d0a-1ca5-40d4-9bfd-58f1d825c98d",
+      "username": "yellowsnake410",
+      "password": "precious",
+      "salt": "fWMvbZqL",
+      "md5": "0fb55585f6e9273061228cbecc5dc36e",
+      "sha1": "354e18a6471ea79a9a00a5cc5fe28846c0d3ff5d",
+      "sha256": "74f755bb7b7b9a8d8e79428c5a85d8bfd5c1751ea8d5a9a80d3d41030ca06649"
+    },
+    "dob": {
+      "date": "1973-09-05T02:53:17.315Z",
+      "age": 50
+    },
+    "registered": {
+      "date": "2022-04-23T23:22:51.023Z",
+      "age": 1
+    },
+    "phone": "077 137 65 85",
+    "cell": "078 936 29 51",
+    "id": {
+      "name": "AVS",
+      "value": "756.5389.6655.74"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/10.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/10.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/10.jpg"
+    },
+    "nat": "CH",
+    "purchases": [
+      {
+        "productID": 13,
+        "quantity": 5
+      },
+      {
+        "productID": 6,
+        "quantity": 3
+      },
+      {
+        "productID": 11,
+        "quantity": 9
+      }
+    ]
+  }
+]
