@@ -1,3 +1,4 @@
+import './App.css';
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Customer from './components/Customer';
@@ -7,20 +8,20 @@ import Navigation from './components/Navigation';
 
 const Header = () => {
     return (
-        <header className="App-header">
+        <Router>
+            <header className="App-header">
                 <title>Products</title>
                 <h1>Inventory Management System (IMS)</h1>
-                <Router>
-          {/* <div> */}
-                    <Navigation />
-                    <Routes>
-                    <Route path="/" exact component={Products} />
-                    <Route path="/customer" exact component={Customer} />
-                    <Route path="/gang" exact component={Gang} />
-                    </Routes>
-            {/* </div> */}
-                </Router>
-        </header>
+                <Navigation />
+            </header>
+            <div className='App-body'>
+                <Routes>
+                    <Route path="/" element={<Products />} />
+                    <Route path="/customer" element={<Customer />} />
+                    <Route path="/gang" element={<Gang />} />
+                </Routes>
+            </div>
+        </Router>
     );
 }
 

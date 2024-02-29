@@ -4,8 +4,10 @@ import Header from "./Header";
 
 
 function App() {
-  return (    
+  return (
+      <div className='App'>
         <Header />
+      </div>
   );
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Customer = () => {
     return (
-        <div>
+        <div className='App-body'>
             <h2>Customer Analytics</h2>
         </div>
     );

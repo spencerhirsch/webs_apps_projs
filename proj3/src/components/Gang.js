@@ -2,7 +2,7 @@ import React from 'react';
 
 const Gang = () => {
     return (
-        <div>
+        <div className='App-body'>
             <h2>The Team</h2>
         </div>
     );
