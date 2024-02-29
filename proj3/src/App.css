@@ -1,0 +1,63 @@
+.App {
+    text-align: left;
+    background-color: rgb(230, 230, 230);
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, serifs;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+  
+.App-header {
+    background-color: white;
+    margin: 25px 45px 5px 45px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    justify-content: space-between;
+}
+
+/* This code came from the CSS slides on Canvas. */
+.App-header h1 {
+    /* Adding gradient to header. */
+    background-image: linear-gradient(to right, black, darkgrey);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+}
+
+.App-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.App-header li {
+    border: 1px solid none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 8px;
+    float: left;
+    color: black;
+    text-align: left;
+    padding: 0.5em;
+    font-size: 12pt;
+}
+
+.App-body {
+    margin: 0px 45px 5px 45px;
+    background-color: white;
+    padding: 10px;  
+}
+
+
+.App-body h2 {
+    font-weight: bold;
+}
+  
