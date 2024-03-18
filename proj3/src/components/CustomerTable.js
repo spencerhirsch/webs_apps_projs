@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './CustomerTableStyle.css';
+import '../css/CustomerTableStyle.css';
 
 const CustomerTable = () => {
   const [items, setItems] = useState([]);

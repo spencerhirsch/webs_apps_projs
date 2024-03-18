@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navigation = () => {
+const Navigation = ({ setComponent }) => {
     return (
         <nav>
           <ul>
             <li>
-                <Link to="/">Products</Link>
+                <Link to="/" onClick={() => setComponent('products')}>Products</Link>
             </li>
             <li>
-              <Link to="/customer">Customer Analytics</Link>
+              <Link to="/customer" onClick={() => setComponent('customer')}>Customer Analytics</Link>
             </li>
             <li>
-                <Link to="/gang">The Team</Link>
+                <Link to="/gang" onClick={() => setComponent('gang')}>The Team</Link>
             </li>
           </ul>
         </nav>
@@ -20,4 +20,3 @@ const Navigation = () => {
 }
 
 export default Navigation;
-

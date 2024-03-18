@@ -13,14 +13,14 @@
   }
   
   .customer-table thead tr {
-    background-color: #f2f2f2; /* Light gray background for header row */
+    background-color: #8f8e8e; /* Light gray background for header row */
   }
   
   .customer-table tbody tr:nth-child(even) {
-    background-color: #ffffff; /* White background for even rows */
+    background-color: #f2f2f2; /* White background for even rows */
   }
   
   .customer-table tbody tr:nth-child(odd) {
-    background-color: #f2f2f2; /* Light gray background for odd rows */
+    background-color: #ffffff; /* Light gray background for odd rows */
   }
   
