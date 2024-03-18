@@ -1,0 +1,60 @@
+/* Grid 'table' row */
+.Grid-row {
+  /* Common font setup */
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+
+  /* Need grid display */
+  display: grid;
+
+  /* Vertically center text */
+  align-items: center;
+
+  /* Radius around the whole header, not each column */
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+
+  /* Space before borders */
+  padding: 5px;
+  margin-top: 3px;
+}
+
+/* Grid 'table' columns */
+.Grid-row div {
+  /* TODO: How to make the little separator? */
+
+  /* Space between columns */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Header row has a unique appearance */
+.Grid-header {
+  background-color: #b1b3b8;
+  font-weight: bold;
+}
+
+/* Data rows alternate BG color */
+.Grid-data:nth-of-type(odd) {
+  background-color: #e4e6eA;
+}
+
+/* Data rows alternate BG color */
+.Grid-data:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+/* Data rows highlight when hovered over */
+.Grid-data:hover {
+  background-color: #dee9f4;
+}
+
+/* Numeric values should be right-aligned */
+.Grid-numeric {
+  text-align: right;
+}
+
+/* Images should be center-aligned */
+.Grid-data img {
+  margin: 0 50%;
+}

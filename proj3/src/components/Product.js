@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const ProductGrid = () => {
+const Product = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -28,4 +28,4 @@ const ProductGrid = () => {
   );
 };
 
-export default ProductGrid;
+export default Product;

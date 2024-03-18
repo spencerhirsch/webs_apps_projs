@@ -1,10 +1,8 @@
 import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Customer from './components/Customer';
-import CustomerTable from './components/CustomerTable';
+import CustomerAnalytics from './components/CustomerAnalytics';
 import Products from './components/Products';
-import ProductGrid from './components/ProductGrid';
 import Gang from './components/Gang';
 import Navigation from './components/Navigation';
 
@@ -21,12 +19,9 @@ const Header = () => {
             <div className='App-body'>
                 <Routes>
                     <Route path="/" element={<Products />} />
-                    <Route path="/customer" element={<Customer />} />
+                    <Route path="/customer" element={<CustomerAnalytics />} />
                     <Route path="/gang" element={<Gang />} />
                 </Routes>
-                {component === 'products' && <ProductGrid />}
-                {component === 'customer' && <CustomerTable />}
-                {/* Add gang component here */}
             </div>
         </Router>
     );
