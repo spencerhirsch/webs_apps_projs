@@ -1,26 +1,42 @@
-/* styles.css */
 .customer-table {
-    width: 80%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the table on the screen */
+    width: 80%;
+    margin: 0 auto;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
     font-size: 12px;
   }
   
-  .customer-table th, .customer-table td {
-    padding: 10px;
+  .customer-table th {
+    padding: 5px;
     text-align: left;
+    border: 1px solid #ffffff;
   }
-  
+
+  .customer-table td {
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #ffffff;
+  }
+
   .customer-table thead tr {
-    background-color: #8f8e8e; /* Light gray background for header row */
+    background-color: #8f8e8e;
   }
   
   .customer-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2; /* White background for even rows */
+    background-color: #f2f2f2;
   }
   
   .customer-table tbody tr:nth-child(odd) {
-    background-color: #ffffff; /* Light gray background for odd rows */
+    background-color: #ffffff;
   }
   
+  .customer-table tbody tr:nth-child(even),
+  .customer-table tbody tr:nth-child(odd) {
+    border-radius: 100px;
+  }
+
+  .customer-table tbody tr:nth-child(even):hover,
+  .customer-table tbody tr:nth-child(odd):hover {
+    background-color: #aedbe0;
+  }
