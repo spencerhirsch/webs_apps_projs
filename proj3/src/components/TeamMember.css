@@ -1,0 +1,12 @@
+
+.team-member {
+    text-align: center;
+  }
+  
+  .member-photo {
+    border-radius: 50%;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures the photo fills the circular shape */
+  }
+  
