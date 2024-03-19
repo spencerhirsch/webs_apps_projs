@@ -1,31 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import './Card.css'; 
 
-const Product = () => {
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    fetch('products.json') // Placed data in /public/ directory because you cannot import from outside src, use fetch to get it from public
-      .then(response => response.json())
-      .then(data => setItems(data))
-      .catch(error => console.error("Failed to load products.json:", error));
-  }, []);
+const ItemCard = ({ item, onClose }) => {
+  if (!item) return null;
 
   return (
-    // Grid layout
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px', padding: '20px' }}>
-      {items.map(item => (
-        // Mapping data to card layout
-        <div key={item.id} style={{ border: '1px solid #ccc', borderRadius: '5px', padding: '10px' }}>
-          <img src={item.image} alt={item.title} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-          <h3>{item.title}</h3>
-          <p>${item.price}</p>
-          <p>{item.description}</p>
-          <p>Rating: {item.rating.rate} ({item.rating.count} reviews)</p>
-          <p>Inventory: {item.inventory}</p>
-        </div>
-      ))}
+    <div className="Card-overlay">
+      <div className="Card">
+        <button className="Card-close" onClick={onClose}>X</button>
+        <img className="Card-image" src={item.image} alt={item.title} />
+        <h3 className="Card-title">{item.title}</h3>
+        <p className="Card-price">${item.price}</p>
+        <p className="Card-category"><span className="Card-label">Category:</span> {item.category}</p>
+        <p className="Card-rating"><span className="Card-label">Rating:</span> {item.rating.rate}</p>
+        <p className="Card-stock"><span className="Card-label">In Stock:</span> {item.inventory}</p>
+      </div>
     </div>
   );
 };
 
-export default Product;
+export default ItemCard;

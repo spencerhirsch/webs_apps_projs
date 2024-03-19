@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ItemCard from './Product';
 import '../Grid.css';
 
 const Products = () => {
@@ -16,6 +17,15 @@ const Products = () => {
             .then(data => setCustomers(data))
             .catch(error => console.error('Failed to load customers.json:', error));
     }, []);
+
+    const [showCard, setShowCard] = useState(false); // State to control the visibility of the card
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    // Function to handle click on learn more
+    const handleLearnMore = (item) => {
+        setSelectedItem(item);
+        setShowCard(true);
+    };
 
     return (
         <main className='App-body'>
@@ -53,10 +63,11 @@ const Products = () => {
                         }, 0) * item.price).toLocaleString()}
                     </div>
                     <div>
-                        <button>Learn More</button>
+                        <button onClick={() => handleLearnMore(item)}>Learn More</button>
                     </div>
                 </section>
             ))}
+            {showCard && <ItemCard item={selectedItem} onClose={() => setShowCard(false)} />}
         </main>
     );
 }

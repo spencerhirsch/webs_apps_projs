@@ -1,0 +1,71 @@
+/* Card.css */
+.Card-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure card overlay on top layer */
+  }
+  
+.Card {
+    background: #e9e4e4;
+    border-radius: 10px;
+    padding: 16px; 
+    width: 250px; 
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+    top: 20vh; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 0.8rem; 
+    z-index: 1001; /* Ensure card is on top layer*/
+  }
+
+.Card-title {
+    font-size: 1rem; 
+    margin-bottom: 0rem; 
+    margin-top: 0rem;
+    font-weight: normal;
+  }
+  
+.Card-price {
+    font-size: 1.5rem; /* Larger font size for price */
+    font-weight: bold; /* Price bold */
+    margin-bottom: 0rem; 
+    margin-top: 0rem;
+  }
+  
+.Card-label {
+    font-weight: bold; /* Apply bold to only the labels */
+  }
+  
+  
+.Card-category, .Card-rating, .Card-stock {
+    font-size: 1rem;
+    font-weight: normal; 
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+  
+  
+.Card-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background: none;
+    font-size: 1rem; 
+    cursor: pointer;
+  }
+  
+.Card-image {
+    width: 100%;  
+    object-fit: cover; 
+    margin-bottom: 12px;
+  }
+  
