@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Thomas",
+    "email": "thomasjohnso2020@my.fit.edu",
+    "bio": "Lorem Ipsum",
+    "url": "thomas.png"
+  },
+
+  {
+    "name": "John",
+    "email": "jvitali2020@my.fit.edu",
+    "bio": "Lorem Ipsum",
+    "url": "john.jpeg"
+  },
+
+  {
+    "name": "Spencer",
+    "email": "shirsch2020@my.fit.edu",
+    "bio": "Lorem Ipsum",
+    "url": "spenc.jpg"
+  },
+
+  {
+    "name": "Trevor",
+    "email": "tschiff2020@my.fit.edu",
+    "bio": "Lorem Ipsum",
+    "url": "trev.jpg"
+  },
+
+  {
+    "name": "Remington",
+    "email": "rgrecko2020@my.fit.edu",
+    "bio": "Lorem Ipsum",
+    "url": "remi.png"
+  }
+  
+]

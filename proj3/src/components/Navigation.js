@@ -12,7 +12,7 @@ const Navigation = ({ setComponent }) => {
               <Link to="/customer" onClick={() => setComponent('customer')}>Customer Analytics</Link>
             </li>
             <li>
-                <Link to="/gang" onClick={() => setComponent('gang')}>The Team</Link>
+                <Link to="/team" onClick={() => setComponent('team')}>The Team</Link>
             </li>
           </ul>
         </nav>

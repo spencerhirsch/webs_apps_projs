@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CustomerAnalytics from './components/CustomerAnalytics';
 import Products from './components/Products';
-import Gang from './components/Gang';
+import Team from './components/Team.js'
 import Navigation from './components/Navigation';
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
                 <Routes>
                     <Route path="/" element={<Products />} />
                     <Route path="/customer" element={<CustomerAnalytics />} />
-                    <Route path="/gang" element={<Gang />} />
+                    <Route path="/team" element={<Team />} />
                 </Routes>
             </div>
         </Router>

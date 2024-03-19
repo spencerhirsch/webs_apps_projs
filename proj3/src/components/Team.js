@@ -1,57 +1,34 @@
-
-import React, { useState } from 'react';
-import TeamMember from './TeamMember';
+import React, { useState, useEffect } from 'react';
+import './TeamMember.css';
 
 const Team = () => {
+    const [members, setMembers] = useState([]);
 
-    const [hoveredMember, setHoveredMember] = useState(null);
-
-    const teamMembers = [
-        { 
-            id: 1, 
-            name: 'John Vitali', 
-            photoUrl: './images/john.jpg' 
-            about: {
-                Major: 'Software Engineer'
-                bio: 'John is a 4th year Software Engineer at Florida Tech, and he interns at Larsen Motorsports.'
-            }
-        },
-        { id: 2, name: 'Spencer Hirsch', photoUrl: '../images/spenc.jpg' },
-        { id: 3, name: 'Thomas Johnson', photoUrl: '../images/thomas.png' },
-        { id: 4, name: 'Trevor Schiff', photoUrl: '../images/trev.jpg' },
-        { id: 5, name: 'Remington Greko', photoUrl: '../images/remi.png' },
-    ];
-
-    const handleMouseEnter = (memberId) => {
-        setHoveredMember(memberId);
-    };
-
-    const handleMouseLeave = () => {
-        setHoveredMember(null);
-    }
-
+    useEffect(() => {
+      fetch('memberList.json') // Placed data in /public/ directory because you cannot import from outside src, use fetch to get it from public
+        .then(response => response.json())
+        .then(data => setMembers(data))
+        .catch(error => console.error('Failed to load memberList.json:', error));
+    }, []);
 
     return (
-        <div>
-          {teamMembers.map((member) => (
-            <div
-              key={member.id}
-              onMouseEnter={() => handleMouseEnter(member.id)}
-              onMouseLeave={handleMouseLeave}
-            >
-              <TeamMember name={member.name} photoUrl={member.photoUrl} />
-              {hoveredMember === member.id && (
-                <div className="about-section">
-                  <h3>{member.name}</h3>
-                  <p><strong>Role:</strong> {member.about.role}</p>
-                  <p><strong>Bio:</strong> {member.about.bio}</p>
-
+        <div className='App-body'>
+            <h2>Team Members</h2>
+            <div className='member-grid' style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}> 
+            {members.map((member, index) => (
+                <div key={index} className="member-container">
+                    <img src={member.url} alt={member.name} className="member-image" />
+                    <div className="member-details">
+                        <h3>{member.name}</h3>
+                        <p>{member.email}</p>
+                        <p>{member.bio}</p>
+                    </div>
                 </div>
-              )}
+            ))}
             </div>
-          ))}
+
         </div>
-      );
-    };
+    );
+};
 
 export default Team;
