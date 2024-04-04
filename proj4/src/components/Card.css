@@ -1,0 +1,133 @@
+/* Card.css */
+  
+.Card {
+    background: white;
+    border-radius: 10px;
+    padding: 16px; 
+    width: 33%; 
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: absolute; 
+    top: 20vh; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 0.8rem; 
+    z-index: 1001; /* Ensure card is on top layer*/
+  }
+
+  .Card-header {
+    background: #e9e4e4;
+    padding: 20px;
+    margin: -16px;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .Card-body {
+    padding: 3px;
+    display: block;
+    text-align: center;
+  }
+
+  .Card-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Card-item .left {
+    flex: 1;
+    /* text-align: right; */
+  }
+  .Card-item .right {
+    flex: 6;
+  }
+
+  .Card-item input {
+    width: 250px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+
+  .Ingredients {
+    background-color: #faf6f6;
+  }
+
+  .Ingredients-header {
+    background-color: #e9e4e4;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .Ingredients-header h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .Ingredients-header .left {
+    flex: 1;    
+  }
+
+  .Ingredients-header .right {
+    flex: 1;
+  }
+
+  .Single-ingredient {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Single-ingredient .left {
+    flex: 1;
+  }
+
+  .Single-ingredient .right {
+    flex: 1;
+  }
+  
+  .Ingredients-body {
+    padding: 15px;
+  }
+
+  .Add-ingredient {
+    background-color: rgb(201, 198, 198);
+    margin-top: 25px;
+    padding: 15px;
+  }
+
+  .Add-ingredient:hover {
+    background-color: rgb(169, 164, 164);
+  }
+
+  .Add-ingredient:active {
+    background-color: rgb(169, 164, 164);
+  }
+
+  .Divider {
+    margin-top: 20px;
+    border-color: rgb(239, 234, 234);
+    width: 100%;
+  }
+
+  .Save-ingredient { 
+    background-color: rgb(26, 83, 124);
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50px;
+  } 
+
+  .Save-ingredient:hover {
+    background-color: rgb(10, 51, 81);
+  }
+
+  .Save-ingredient:active {
+    background-color: rgb(10, 51, 81);
+  }
