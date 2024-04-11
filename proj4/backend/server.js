@@ -2,12 +2,46 @@ require('dotenv').config();
 const cors = require('cors');
 const express = require('express');
 const axios = require('axios');
+const { MongoClient } = require('mongodb');
+const fs = require('fs');
 const app = express();
 
 app.use(cors()); // Enable CORS for routes
 app.use(express.json()); // Middleware to parse JSON bodies
 
 const port = process.env.PORT || 3001;
+
+// Mongodb connection
+
+const uri = process.env.CONNECTION_STRING
+const client = new MongoClient(uri);
+
+// Endpoint to populate the database
+app.post('/api/populate', async (req, res) => {
+  try {
+    // Grab and destructure entries
+    const { entries } = req.body;
+    console.log('Received batch:', entries.length);
+
+    // Connect to database
+    console.log("Connecting");
+    await client.connect()
+    console.log("Finished connecting");
+
+    // Go to collection
+    const db = client.db('recipes-group2');
+    const collection = db.collection('recipes')
+
+    // Insert entries into our collection
+    await collection.insertMany(entries);
+
+    res.status(200).send('Database populated successfully');
+  } catch (error) {
+    console.error('Error adding entry to database:', error)
+    res.status(500).send('Error populating database');
+  }
+});
+
 
 app.get('/api/search', async (req, res) => {
   const { query } = req.query;
