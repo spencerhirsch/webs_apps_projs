@@ -17,26 +17,8 @@ function Header() {
   const populateDB = async () => {
     try {
       // Fetch json with axios (using fetch gave me conflicting http erros as I was using axios, and js functions)
-      const response = await axios.get('/recipes.json');
-      const jsonData = response.data;
-
-      const entriesToPopulate = jsonData.slice(0, 782);
-
-      // Making batches to avoid a too large payload
-      const batchSize = 100;
-      const batches = [];
-
-      for (let i = 0; i < entriesToPopulate.length; i += batchSize) {
-        batches.push(entriesToPopulate.slice(i, i + batchSize));
-      }
-
-      // Update uploading state
       setUploading(true);
-
-      // Send batch to backend
-      for (const batch of batches) {
-        await axios.post('http://localhost:3001/api/populate', { entries: batch });
-      }
+      await axios.post('http://localhost:3001/api/populate', {signal: "upload"});
 
       // Update uploadingComplete state
       setUploadComplete(true);

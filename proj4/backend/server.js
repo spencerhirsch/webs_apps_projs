@@ -19,8 +19,6 @@ const client = new MongoClient(uri);
 // Endpoint to populate the database
 app.post('/api/populate', async (req, res) => {
   try {
-    // Grab and destructure entries
-    const { entries } = req.body;
 
     // Connect to database
     console.log("Connecting");
@@ -31,14 +29,25 @@ app.post('/api/populate', async (req, res) => {
     const db = client.db('recipes-group2');
     const collection = db.collection('recipes')
 
-    // Add multiple or single entries
-    if (Array.isArray(entries)) {
-      console.log('Received batch:', entries.length);
-      await collection.insertMany(entries);
-    } else {
-      console.log("Received recipe");
-      await collection.insertOne(entries);
+
+    // Grab data
+    const newData = req.body;
+    if (newData.signal !== undefined) {
+      // Json upload
+      const jsonData = fs.readFileSync('recipes.json', 'utf8');
+      const data = JSON.parse(jsonData);
+
+      const entriesToPopulate = data.slice(0, 782);
+      await collection.insertMany(entriesToPopulate);
+
+
+    } else if (newData.entry !== undefined) {
+      // Single upload
+      const { entry } = newData; // Destructure entry
+      console.log(entry);
+      await collection.insertOne(entry); 
     }
+
 
     console.log("Insertion completed")
 

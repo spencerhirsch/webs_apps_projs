@@ -49,7 +49,7 @@ function Popup() {
         // console.log(newEntry);
 
         try {
-            await axios.post('http://localhost:3001/api/populate', { entries: newEntry });
+            await axios.post('http://localhost:3001/api/populate', { entry: newEntry });
         } catch (error) {
             console.error('Error', error);
         }
