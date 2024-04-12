@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './Card.css'
 
 function Popup() {
+    const [name, setName] = useState('');
+    const [description, setDescription] = useState('');
     const [items, setItems] = useState([]);
     const [quantity, setQuantity] = useState('');
     const [ingredient, setIngredient] = useState('');
+
 
     const handleAddItem = (e) => {
         e.preventDefault();
@@ -12,17 +16,44 @@ function Popup() {
         setItems(prevItems => [...prevItems, newItem]);
         setQuantity('');
         setIngredient('');
-        console.log(items)
-      };
-    
-      const handleChange = (e) => {
+    };
+
+    const handleChange = (e) => {
         const { name, value } = e.target;
         if (name === 'quantity') {
             setQuantity(value);
         } else if (name === 'ingredient') {
             setIngredient(value);
+        } else if (name === 'name') {
+            setName(value);
+        } else if (name === 'description') {
+            setDescription(value);
         }
-      };
+    };
+
+    // Write recipe to the db
+    const saveRecipe = async () => {
+
+        const mergedArray = items.map(obj => obj.quantity ? `${obj.quantity} ${obj.ingredient}` : obj.ingredient);
+
+        const newEntry = {
+            name: name,
+            description: description,
+            image: "",
+            recipeYield: "",
+            cookTime: "",
+            prepTime: "",
+            ingredients: mergedArray
+        };
+
+        // console.log(newEntry);
+
+        try {
+            await axios.post('http://localhost:3001/api/populate', { entries: newEntry });
+        } catch (error) {
+            console.error('Error', error);
+        }
+    };
 
     return (
         <div className='Card'>
@@ -32,11 +63,11 @@ function Popup() {
             <div className='Card-body'>
                 <div className='Card-item'>
                     <h3 className='left'>Name</h3>
-                    <input className='right'></input>
+                    <input className='right' type="text" name="name" value={name} onChange={handleChange}></input>
                 </div>
                 <div className='Card-item'>
                     <h3 className='left'>Description</h3>
-                    <input className='right'></input>
+                    <input className='right' type="text" name="description" value={description} onChange={handleChange}></input>
                 </div>
                 <div className='Ingredients'>
                     <div className='Ingredients-header'>
@@ -44,14 +75,14 @@ function Popup() {
                         <h4 className='right'>Ingredient</h4>
                     </div>
                     <div className='Ingredients-body'>
-                    {items.map((item, index) => (
-                        <div key={index}>
-                            <div className='Single-ingredient'>
-                                <p className='left'>{item.quantity}</p>
-                                <p className='right'>{item.ingredient}</p>
+                        {items.map((item, index) => (
+                            <div key={index}>
+                                <div className='Single-ingredient'>
+                                    <p className='left'>{item.quantity}</p>
+                                    <p className='right'>{item.ingredient}</p>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
                         <h3>Add Ingredient</h3>
                         <div className='Card-item'>
                             <h3 className='left'>Quantity</h3>
@@ -61,10 +92,10 @@ function Popup() {
                             <h3 className='right'>Ingredient</h3>
                             <input type="text" name="ingredient" value={ingredient} onChange={handleChange}></input>
                         </div>
-                        </div>
-                        <button onClick={handleAddItem} className='Add-ingredient'>Add Ingredient</button>
-                        <hr className='Divider'></hr>
-                        <button className='Save-ingredient'>Save Recipe</button>
+                    </div>
+                    <button onClick={handleAddItem} className='Add-ingredient'>Add Ingredient</button>
+                    <hr className='Divider'></hr>
+                    <button onClick={saveRecipe} className='Save-ingredient'>Save Recipe</button>
                 </div>
             </div>
         </div>

@@ -21,7 +21,6 @@ app.post('/api/populate', async (req, res) => {
   try {
     // Grab and destructure entries
     const { entries } = req.body;
-    console.log('Received batch:', entries.length);
 
     // Connect to database
     console.log("Connecting");
@@ -32,8 +31,17 @@ app.post('/api/populate', async (req, res) => {
     const db = client.db('recipes-group2');
     const collection = db.collection('recipes')
 
-    // Insert entries into our collection
-    await collection.insertMany(entries);
+    // Add multiple or single entries
+    if (Array.isArray(entries)) {
+      console.log('Received batch:', entries.length);
+      await collection.insertMany(entries);
+    } else {
+      console.log("Received recipe");
+      await collection.insertOne(entries);
+    }
+
+    console.log("Insertion completed")
+
 
     res.status(200).send('Database populated successfully');
   } catch (error) {
