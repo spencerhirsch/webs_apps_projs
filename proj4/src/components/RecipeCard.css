@@ -1,0 +1,74 @@
+/* RecipeCard.css */
+
+/* Small view (no recipe selected).
+Not to be confused with small device view. */
+.RC-main-small {
+  /* Rounded border on the cards */
+  border-radius: 15px;
+  /* Drop shadow */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+  /* Each card should occupy 20% of the screen on a larger screen */
+  width: calc(20% - 1em);
+
+  /* Spacing between cards */
+  margin-right: 1em;
+  /* Spacing between rows */
+  margin-bottom: 1em;
+}
+
+/* Large view (recipe selected).
+Not to be confused with large device view. */
+.RC-main-large {
+  /* Rounded border on the cards */
+  border-radius: 15px;
+  /* Drop shadow */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+  /* Each card should occupy 20% of the screen on a larger screen */
+  width: calc(100% - 1em);
+
+  /* Spacing between cards */
+  margin-right: 1em;
+  /* Spacing between rows */
+  margin-bottom: 1em;
+}
+
+.RC-img {
+  /* Images touch the edges of the card */
+  width: 100%;
+}
+
+.RC-body {
+  /* Everything except the image has padding */
+  padding: 10px;
+}
+
+.RC-desc p {
+  /* Lines in description have no vertical margin... */
+  margin: 0;
+}
+
+.RC-desc {
+  /* ...But the description itself does! */
+  margin-bottom: 15px;
+}
+
+.RC-ingredients-header:after {
+  display: block;
+  border: 1px solid gray;
+  content: '';
+}
+
+.RC-ingredients {
+  /* Reduce left padding a little bit to align with the text. */
+  padding-left: 1em;
+}
+
+/* Setting the formatting for smaller screens. */
+@media screen and (max-width: 768px) {
+  .RC-main-small {
+    /* Smaller screens should only show one card per row */
+    width: calc(100% - 1em);
+  }
+}
