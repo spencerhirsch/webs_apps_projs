@@ -49,7 +49,7 @@ function Search() {
             />
             {isLoading && <div>Loading...</div>}
             {error && <div>Error: {error}</div>}
-            <SearchResults results={recipes}></SearchResults>
+            {recipes.length > 0 && <SearchResults results={recipes}></SearchResults>}
         </div >
     );
 }

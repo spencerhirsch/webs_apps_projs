@@ -67,24 +67,27 @@ function timeToHHMM(time) {
         return '00:00';
     }
 
-    if (!time.startsWith('PT')) {
-        throw new Error(`Malformed recipe time: ${time}`);
+    // Malformed recipe time
+    if (!time.startsWith('P')) {
+        return '00:00';
     }
 
     let hour = 0;
     let minute = 0;
 
     let tok = '';
-    for (let i = 2; i < time.length; i++) {
+    for (let i = 1; i < time.length; i++) {
         const c = time[i];
 
         // Numeric (part of the token)
         if (c >= '0' && c <= '9') {
             tok += c;
         }
-        // 'H'/'M' (end of the token)
+        // 'D'/'H'/'M' (end of the token)
         else {
             switch (c) {
+                case 'D':
+                    break;
                 case 'H':
                     hour = parseInt(tok);
                     break;
@@ -92,7 +95,7 @@ function timeToHHMM(time) {
                     minute = parseInt(tok);
                     break;
                 default:
-                    throw new Error(`Malformed recipe time: ${time}`);
+                    break;
             }
 
             tok = '';

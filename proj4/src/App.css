@@ -4,7 +4,6 @@
   font-family: "Segoe UI", Roboto, Helvetica, Arial, serifs;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .App-header {

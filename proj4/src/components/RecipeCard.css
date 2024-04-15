@@ -3,8 +3,10 @@
 /* Small view (no recipe selected).
 Not to be confused with small device view. */
 .RC-main-small {
-  /* Rounded border on the cards */
+  /* Rounded, gray border on the cards */
+  border: 2px solid gray;
   border-radius: 15px;
+
   /* Drop shadow */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
@@ -20,8 +22,10 @@ Not to be confused with small device view. */
 /* Large view (recipe selected).
 Not to be confused with large device view. */
 .RC-main-large {
-  /* Rounded border on the cards */
+  /* Rounded, gray border on the cards */
+  border: 2px solid gray;
   border-radius: 15px;
+
   /* Drop shadow */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
@@ -37,6 +41,8 @@ Not to be confused with large device view. */
 .RC-img {
   /* Images touch the edges of the card */
   width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
 }
 
 .RC-body {
@@ -56,7 +62,7 @@ Not to be confused with large device view. */
 
 .RC-ingredients-header:after {
   display: block;
-  border: 1px solid gray;
+  border: 1px solid lightgray;
   content: '';
 }
 
