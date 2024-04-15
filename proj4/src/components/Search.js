@@ -18,13 +18,16 @@ function Search() {
             setIsLoading(true);
             setError('');
             try {
-                const response = await fetch(`http://localhost:3001/api/search?query=${encodeURIComponent(query)}`)
-                    ;
+                // Use the current URL as a reference so the query works both locally and on EC2
+                const url = window.location.href.replace(":3000/", ":3001/");
+                const response = await fetch(`${url}api/search?query=${encodeURIComponent(query)}`);
+
                 if (!response.ok) {
                     const textResponse = await response.text();
                     console.log(textResponse); // Log the full text response to console
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
+
                 const data = await response.json();
                 setRecipes(data["documents"]);
             } catch (error) {

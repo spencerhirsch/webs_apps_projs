@@ -47,7 +47,9 @@ function Popup({ saveCallback }) {
         };
 
         try {
-            await axios.post('http://localhost:3001/api/populate', { entry: newEntry });
+            // Use the current URL as a reference so the query works both locally and on EC2
+            const url = window.location.href.replace(":3000/", ":3001/");
+            await axios.post(`${url}api/populate`, { entry: newEntry });
             saveCallback();
         } catch (error) {
             console.error('Error', error);
