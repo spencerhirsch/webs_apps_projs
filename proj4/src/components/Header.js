@@ -18,7 +18,7 @@ function Header() {
     try {
       // Fetch json with axios (using fetch gave me conflicting http erros as I was using axios, and js functions)
       setUploading(true);
-      await axios.post('http://localhost:3001/api/populate', {signal: "upload"});
+      await axios.post('http://localhost:3001/api/populate', { signal: "upload" });
 
       // Update uploadingComplete state
       setUploadComplete(true);
@@ -37,7 +37,7 @@ function Header() {
       {uploadComplete && <p>Finished uploading recipes</p>}
 
       <button onClick={togglePopup}>Add Recipe</button>
-      {showPopup && <Popup />}
+      {showPopup && <Popup saveCallback={togglePopup} />}
     </div>
   );
 }

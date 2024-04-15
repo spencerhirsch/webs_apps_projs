@@ -11,7 +11,8 @@ Not to be confused with small device view. */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
   /* Each card should occupy 20% of the screen on a larger screen */
-  width: calc(20% - 1em);
+  /* (adjusted for border size) */
+  width: calc(20% - 1em - 4px);
 
   /* Spacing between cards */
   margin-right: 1em;
@@ -30,6 +31,7 @@ Not to be confused with large device view. */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
   /* Each card should occupy 20% of the screen on a larger screen */
+  /* (adjusted for border size) */
   width: calc(100% - 1em);
 
   /* Spacing between cards */

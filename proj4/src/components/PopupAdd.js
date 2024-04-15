@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './Card.css'
 
-function Popup() {
+function Popup({ saveCallback }) {
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [items, setItems] = useState([]);
@@ -46,10 +46,9 @@ function Popup() {
             ingredients: mergedArray
         };
 
-        // console.log(newEntry);
-
         try {
             await axios.post('http://localhost:3001/api/populate', { entry: newEntry });
+            saveCallback();
         } catch (error) {
             console.error('Error', error);
         }

@@ -3,6 +3,11 @@ import './RecipeCard.css';
 
 function RecipeCard({ item, isLarge, btnCallback }) {
     return (
+        /*
+         *
+         * LARGE VIEW RECIPE CARD
+         * 
+         */
         isLarge ? (<div className='RC-main-large'>
             { /* Card image (touches edges) */}
             <img className='RC-img' src={item.image} onError={useDummyImg}></img>
@@ -33,7 +38,14 @@ function RecipeCard({ item, isLarge, btnCallback }) {
                 <button onClick={btnCallback}>View Recipe</button>
             </div>
         </div>)
+
             :
+
+            /*
+             *
+             * SMALL VIEW RECIPE CARD
+             * 
+             */
             (<div className='RC-main-small'>
                 { /* Card image (touches edges) */}
                 <img className='RC-img' src={item.image} onError={useDummyImg}></img>
